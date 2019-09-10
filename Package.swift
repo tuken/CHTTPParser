@@ -4,5 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "CHTTPParser"
-)
+    name: "CHTTPParser",
+    products: [
+        .library(name: "CHTTPParser", targets: ["CHTTPParser"])
+    ],
+    targets: [
+        .target(name: "CHTTPParser", dependencies: []),
+    ])
